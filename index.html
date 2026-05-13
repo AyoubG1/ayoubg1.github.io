@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayoub — ayoubg1.dev</title>
+  <meta name="description" content="Personal site of Ayoub — projects, writing, and things I'm building." />
+  <meta name="theme-color" content="#0f0e0c" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ayoub — ayoubg1.dev" />
+  <meta property="og:description" content="Personal site of Ayoub — projects, writing, and things I'm building." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ayoubg1.dev" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>★</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- grain & noise overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="/" class="logo">
+      <span class="logo-mark">★</span>
+      <span class="logo-text">ayoubg1<span class="dot">.</span>dev</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#writing">writing</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-meta">
+        <span class="meta-line"></span>
+        <span class="meta-text">portfolio · 2026</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <em>Ayoub</em>.<br />
+        I build things <br/>on the web.
+      </h1>
+      <p class="hero-sub">
+        Developer based in <span class="hl">[your city]</span>. I like clean code,
+        thoughtful design, and shipping ideas fast. Currently focused on
+        <span class="hl">[what you're working on]</span>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See my work →</a>
+        <a href="mailto:hello@ayoubg1.dev" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a developer who enjoys turning ideas into real, usable products.
+            I care about <em>craft</em> — well-named functions, fast page loads,
+            interfaces that feel obvious in retrospect.
+          </p>
+          <p>
+            Right now I'm learning <span class="hl">[a technology]</span> and
+            building <span class="hl">[a project]</span>. Outside of code I
+            enjoy <span class="hl">[a hobby]</span>.
+          </p>
+          <p>
+            If you're working on something interesting, I'd love to hear about it.
+          </p>
+        </div>
+        <aside class="about-side">
+          <div class="card">
+            <div class="card-label">stack</div>
+            <ul class="taglist">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-label">currently</div>
+            <p class="card-text">Open to internships & freelance work.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Selected Projects</h2>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-num">001</div>
+          <div class="project-main">
+            <h3 class="project-title">Project Name One</h3>
+            <p class="project-desc">
+              A short description of what this project does and why it matters.
+              Two or three lines is plenty — focus on the problem and the result.
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Tailwind</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-num">002</div>
+          <div class="project-main">
+            <h3 class="project-title">Project Name Two</h3>
+            <p class="project-desc">
+              Another project. Mention the stack, what you learned, and any
+              numbers or outcomes worth sharing.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span><span>PostgreSQL</span><span>Prisma</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-num">003</div>
+          <div class="project-main">
+            <h3 class="project-title">Project Name Three</h3>
+            <p class="project-desc">
+              A third project. CLIs, small tools, scripts, and weekend
+              experiments all count — pick the ones that show range.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>FastAPI</span><span>Docker</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a href="#" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="more-link">
+        <a href="https://github.com/ayoubg1" target="_blank" rel="noopener">
+          More on GitHub →
+        </a>
+      </p>
+    </section>
+
+    <!-- WRITING / BLOG -->
+    <section class="section" id="writing">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Writing</h2>
+      </div>
+
+      <ul class="posts">
+        <li class="post">
+          <a href="posts/hello-world.html">
+            <time datetime="2026-01-15">Jan 15, 2026</time>
+            <span class="post-title">Hello world — why I started this blog</span>
+            <span class="post-arrow">→</span>
+          </a>
+        </li>
+        <li class="post">
+          <a href="#">
+            <time datetime="2026-02-10">Feb 10, 2026</time>
+            <span class="post-title">A second post you'll write soon</span>
+            <span class="post-arrow">→</span>
+          </a>
+        </li>
+        <li class="post">
+          <a href="#">
+            <time datetime="2026-03-04">Mar 04, 2026</time>
+            <span class="post-title">And another — keep them short and honest</span>
+            <span class="post-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Get in touch</h2>
+      </div>
+      <p class="contact-lead">
+        The fastest way to reach me is email. I'm also around on the usual places.
+      </p>
+
+      <div class="socials">
+        <a href="mailto:hello@ayoubg1.dev" class="social">
+          <span class="social-label">email</span>
+          <span class="social-handle">hello@ayoubg1.dev</span>
+        </a>
+        <a href="https://github.com/ayoubg1" target="_blank" rel="noopener" class="social">
+          <span class="social-label">github</span>
+          <span class="social-handle">@ayoubg1</span>
+        </a>
+        <a href="https://twitter.com/ayoubg1" target="_blank" rel="noopener" class="social">
+          <span class="social-label">x / twitter</span>
+          <span class="social-handle">@ayoubg1</span>
+        </a>
+        <a href="https://linkedin.com/in/ayoubg1" target="_blank" rel="noopener" class="social">
+          <span class="social-label">linkedin</span>
+          <span class="social-handle">/in/ayoubg1</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-row">
+      <span>© <span id="year"></span> Ayoub. Made with care.</span>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

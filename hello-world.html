@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello world — ayoubg1.dev</title>
+  <meta name="description" content="Why I started this blog." />
+  <meta name="theme-color" content="#0f0e0c" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>★</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .post-page {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: clamp(3rem, 9vh, 6rem) var(--pad-x) 4rem;
+    }
+    .post-meta {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      color: var(--ink-dim);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .post-meta .meta-line {
+      display: inline-block; width: 2rem; height: 1px; background: var(--ink-dim);
+    }
+    .post-h1 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+    .post-body p {
+      color: var(--ink-soft);
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+    }
+    .post-body h2 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--ink);
+    }
+    .post-body a {
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      transition: border-color 0.2s ease;
+    }
+    .post-body a:hover { border-color: var(--accent); }
+    .post-body code {
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+      background: var(--bg-soft);
+      padding: 0.1em 0.4em;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      color: var(--ink);
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 3rem;
+      font-size: 13px;
+      color: var(--ink-soft);
+      transition: color 0.2s ease;
+    }
+    .back:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="/" class="logo">
+      <span class="logo-mark">★</span>
+      <span class="logo-text">ayoubg1<span class="dot">.</span>dev</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/#about">about</a>
+      <a href="/#projects">projects</a>
+      <a href="/#writing">writing</a>
+      <a href="/#contact">contact</a>
+    </nav>
+  </header>
+
+  <article class="post-page">
+    <div class="post-meta">
+      <span class="meta-line"></span>
+      <time datetime="2026-01-15">January 15, 2026</time>
+      <span>· 2 min read</span>
+    </div>
+
+    <h1 class="post-h1">Hello world — why I started this blog.</h1>
+
+    <div class="post-body">
+      <p>
+        Welcome to my corner of the internet. I built this site to have one
+        place for the things I'm working on, the things I'm learning, and the
+        occasional thought I want to keep around longer than a tweet.
+      </p>
+
+      <h2>What you'll find here</h2>
+      <p>
+        Mostly short posts about projects, notes on what I'm reading, and
+        write-ups of things I figure out along the way. I'd rather post
+        something useful and short than wait for a perfect long-form essay
+        that never ships.
+      </p>
+
+      <h2>How it's built</h2>
+      <p>
+        This site is plain HTML and CSS — no framework, no build step. It's
+        hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+        with a custom domain. The whole source is open at
+        <a href="https://github.com/ayoubg1/ayoubg1.github.io" target="_blank" rel="noopener">github.com/ayoubg1</a>
+        if you want to poke around.
+      </p>
+
+      <p>
+        Thanks for stopping by — more soon.
+      </p>
+    </div>
+
+    <a href="/" class="back">← Back to home</a>
+  </article>
+</body>
+</html>
