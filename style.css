@@ -469,6 +469,16 @@ main {
   .footer-row { flex-direction: column; gap: 0.75rem; }
 }
 
+.inline-link {
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink-dim);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.inline-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 @media (max-width: 460px) {
   .nav { padding: 0.9rem var(--pad-x); }
   .logo-text { display: none; }
