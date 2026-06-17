@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ayoub — ayoubg1.dev</title>
   <meta name="description" content="Personal site of Ayoub — projects, writing, and things I'm building." />
-  <meta name="theme-color" content="#0f0e0c" />
+  <meta name="theme-color" content="#14110c" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Ayoub — ayoubg1.dev" />
@@ -18,7 +18,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,235 +27,277 @@
   <div class="grain" aria-hidden="true"></div>
 
   <header class="nav">
-    <a href="/" class="logo">
-      <span class="logo-mark">★</span>
-      <span class="logo-text">ayoubg1<span class="dot">.</span>dev</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#writing">writing</a>
-      <a href="#contact">contact</a>
-    </nav>
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">★</span>
+        <span class="logo-text">ayoubg1<span class="dot">.</span>dev</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#writing">writing</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- HERO (dark) -->
     <section class="hero" id="top">
-      <div class="hero-meta">
-        <span class="meta-line"></span>
-        <span class="meta-text">portfolio · 2026</span>
-      </div>
-      <h1 class="hero-title">
-        Hi, I'm <em>Ayoub</em>.<br />
-        I build things <br/>just cuz
-        I can.
-      </h1>
-      <p class="hero-sub">
-        Developer or just a Human being I guess based in Berlin, studying
-        Computer Engineering or Technische Informatik at TU Berlin.
-        I like a drink called Mio Mio and usually you will find me at the bib.
-        Heading toward <span class="hl">consumer hardware and embedded
-        systems</span>, building <span class="hl">web apps and 3D games</span>
-        along the way.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">See my work →</a>
-        <a href="mailto:hello@ayoubg1.dev" class="btn btn-ghost">Get in touch</a>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="section-head">
-        <span class="section-num">01</span>
-        <h2 class="section-title">About</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm a developer who enjoys turning ideas into real, usable products.
-            I don't care if the idea is crazy or not, as long as wir Spaß machen.
-          </p>
-          <p>
-            Right now I'm learning <span class="hl">mobile apps developement</span> and
-            building <span class="hl">apps that solves problems</span>. Outside of code I
-            enjoy Anime, Gaming, Basketball, and playing survival mode rl. 
-          </p>
-          <p>
-            If you're working on something interesting, I'd love to hear about it.
-          </p>
+      <div class="container hero-inner">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-meta">
+          <span class="meta-line"></span>
+          <span class="meta-text">portfolio · 2026</span>
         </div>
-        <aside class="about-side">
-          <div class="card">
-            <div class="card-label">stack</div>
-            <ul class="taglist">
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>PostgreSQL</li>
-              <li>Git</li>
-            </ul>
-          </div>
-          <div class="card">
-            <div class="card-label">currently</div>
-            <p class="card-text">Open to internships & freelance work.</p>
-          </div>
-        </aside>
+        <h1 class="hero-title">
+          Hi, I'm <em>Ayoub</em>.<br />
+          I build things <br/>just cuz
+          I can.
+        </h1>
+        <p class="hero-sub">
+          Developer or just a Human being I guess based in Berlin, studying
+          Computer Engineering or Technische Informatik at TU Berlin.
+          I like a drink called Mio Mio and usually you will find me at the bib.
+          Heading toward <span class="hl">consumer hardware and embedded
+          systems</span>, building <span class="hl">web apps and 3D games</span>
+          along the way.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See my work →</a>
+          <a href="mailto:hello@ayoubg1.dev" class="btn btn-ghost">Get in touch</a>
+        </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ABOUT (light panel) -->
+    <section class="section section-light" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">01</span>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              I'm a developer who enjoys turning ideas into real, usable products.
+              I don't care if the idea is crazy or not, as long as wir Spaß machen.
+            </p>
+            <p>
+              Right now I'm learning <span class="hl">mobile apps developement</span> and
+              building <span class="hl">apps that solves problems</span>. Outside of code I
+              enjoy Anime, Gaming, Basketball, and playing survival mode rl. 
+            </p>
+            <p>
+              If you're working on something interesting, I'd love to hear about it.
+            </p>
+          </div>
+          <aside class="about-side">
+            <div class="card">
+              <div class="card-label">stack</div>
+              <ul class="taglist">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>PostgreSQL</li>
+                <li>Git</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-label">currently</div>
+              <p class="card-text">Open to internships & freelance work.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (dark) -->
     <section class="section" id="projects">
-      <div class="section-head">
-        <span class="section-num">02</span>
-        <h2 class="section-title">Selected Projects</h2>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-num">001</div>
+            <div class="project-main">
+              <h3 class="project-title">Community Reporting Platform</h3>
+              <p class="project-desc">
+                Community Reporting Platform is a civic mobile app concept that enables citizens to report local
+                infrastructure and environmental issues using photos and geolocation. The project aims to improve
+                community engagement by connecting residents, municipalities, and donors to accelerate problem resolution.
+              </p>
+              <div class="project-tags">
+                <span>React</span><span>TypeScript</span><span>Tailwind</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live ↗</a>
+              <a href="#" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-num">002</div>
+            <div class="project-main">
+              <h3 class="project-title">Melody Dash</h3>
+              <p class="project-desc">
+                Melody Dash is a 3D rhythm-based mobile game built in Unity that combines
+                fast obstacle-avoidance gameplay with music synchronization mechanics. 
+                The project focuses on creating engaging level design, responsive player
+                controls, and scalable game systems including progression, inventory, and in-game rewards.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span><span>PostgreSQL</span><span>Prisma</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live ↗</a>
+              <a href="#" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="project project-featured reveal">
+            <div class="project-num">003</div>
+            <div class="project-main">
+              <h3 class="project-title">
+                Breath of the Damned — Global Game Jam
+                <span class="badge-play">▶ playable</span>
+              </h3>
+              <p class="project-desc">
+                A retro-inspired first-person shooter built in Unity during a 48-hour
+                game jam hosted at <a href="https://www.kolibrigames.com" target="_blank" rel="noopener" class="inline-link">Kolibri Games</a>.
+                I worked as gameplay programmer in a team of four — implementing core
+                gameplay systems, audio integration, and visual effects including fog
+                shaders and atmosphere work.
+              </p>
+              <div class="project-tags">
+                <span>Unity</span><span>C#</span><span>Shaders</span><span>Game Jam</span>
+              </div>
+            </div>
+            <div class="project-links project-links-featured">
+              <a href="https://shervin-shafizad.itch.io/breath-of-the-dammed" target="_blank" rel="noopener" class="btn-play">
+                <span class="btn-play-icon" aria-hidden="true">▶</span> Play it now
+              </a>
+              <a href="https://globalgamejam.org/games/2026/breath-damned-9" target="_blank" rel="noopener" class="link-secondary">Jam page ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="more-link reveal">
+          <a href="https://github.com/ayoubg1" target="_blank" rel="noopener">
+            More on GitHub →
+          </a>
+        </p>
       </div>
-
-      <div class="projects">
-        <article class="project">
-          <div class="project-num">001</div>
-          <div class="project-main">
-            <h3 class="project-title">Community Reporting Platform</h3>
-            <p class="project-desc">
-              Community Reporting Platform is a civic mobile app concept that enables citizens to report local
-              infrastructure and environmental issues using photos and geolocation. The project aims to improve
-              community engagement by connecting residents, municipalities, and donors to accelerate problem resolution.
-            </p>
-            <div class="project-tags">
-              <span>React</span><span>TypeScript</span><span>Tailwind</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Live ↗</a>
-            <a href="#" target="_blank" rel="noopener">Code ↗</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-num">002</div>
-          <div class="project-main">
-            <h3 class="project-title">Melody Dash</h3>
-            <p class="project-desc">
-              Melody Dash is a 3D rhythm-based mobile game built in Unity that combines
-              fast obstacle-avoidance gameplay with music synchronization mechanics. 
-              The project focuses on creating engaging level design, responsive player
-              controls, and scalable game systems including progression, inventory, and in-game rewards.
-            </p>
-            <div class="project-tags">
-              <span>Next.js</span><span>PostgreSQL</span><span>Prisma</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Live ↗</a>
-            <a href="#" target="_blank" rel="noopener">Code ↗</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-num">003</div>
-          <div class="project-main">
-            <h3 class="project-title">Breath of the Damned — Global Game Jam</h3>
-            <p class="project-desc">
-              A retro-inspired first-person shooter built in Unity during a 48-hour
-              game jam hosted at <a href="https://www.kolibrigames.com" target="_blank" rel="noopener" class="inline-link">Kolibri Games</a>.
-              I worked as gameplay programmer in a team of four — implementing core
-              gameplay systems, audio integration, and visual effects including fog
-              shaders and atmosphere work.
-            </p>
-            <div class="project-tags">
-              <span>Unity</span><span>C#</span><span>Shaders</span><span>Game Jam</span>
-            </div>
-          </div>
-          <div class="project-links">
-            <a href="https://shervin-shafizad.itch.io/breath-of-the-dammed" target="_blank" rel="noopener">Play ↗</a>
-            <a href="https://globalgamejam.org/games/2026/breath-damned-9" target="_blank" rel="noopener">Jam page ↗</a>
-          </div>
-        </article>
-      </div>
-
-      <p class="more-link">
-        <a href="https://github.com/ayoubg1" target="_blank" rel="noopener">
-          More on GitHub →
-        </a>
-      </p>
     </section>
 
-    <!-- WRITING / BLOG -->
-    <section class="section" id="writing">
-      <div class="section-head">
-        <span class="section-num">03</span>
-        <h2 class="section-title">Writing</h2>
-      </div>
+    <!-- WRITING / BLOG (light panel) -->
+    <section class="section section-light" id="writing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Writing</h2>
+        </div>
 
-      <ul class="posts">
-        <li class="post">
-          <a href="posts/hello-world.html">
-            <time datetime="2026-01-15">Jan 15, 2026</time>
-            <span class="post-title">Hello world — why I started this blog</span>
-            <span class="post-arrow">→</span>
-          </a>
-        </li>
-        <li class="post">
-          <a href="https://linkly.link/2iscm">
-            <time datetime="2026-02-10">Feb 10, 2026</time>
-            <span class="post-title">Click Here, u won't regret it</span>
-            <span class="post-arrow">→</span>
-          </a>
-        </li>
-        <li class="post">
-          <a href="https://linkly.link/2iscm">
-            <time datetime="2026-03-04">Mar 04, 2026</time>
-            <span class="post-title">And another Click Here :) </span>
-            <span class="post-arrow">→</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="posts">
+          <li class="post reveal">
+            <a href="posts/hello-world.html">
+              <time datetime="2026-01-15">Jan 15, 2026</time>
+              <span class="post-title">Hello world — why I started this blog</span>
+              <span class="post-arrow">→</span>
+            </a>
+          </li>
+          <li class="post reveal">
+            <a href="https://linkly.link/2iscm">
+              <time datetime="2026-02-10">Feb 10, 2026</time>
+              <span class="post-title">Click Here, u won't regret it</span>
+              <span class="post-arrow">→</span>
+            </a>
+          </li>
+          <li class="post reveal">
+            <a href="https://linkly.link/2iscm">
+              <time datetime="2026-03-04">Mar 04, 2026</time>
+              <span class="post-title">And another Click Here :) </span>
+              <span class="post-arrow">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT (dark) -->
     <section class="section section-contact" id="contact">
-      <div class="section-head">
-        <span class="section-num">04</span>
-        <h2 class="section-title">Get in touch</h2>
-      </div>
-      <p class="contact-lead">
-        The fastest way to reach me is email. I'm also around on the usual places.
-      </p>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Get in touch</h2>
+        </div>
+        <p class="contact-lead reveal">
+          The fastest way to reach me is email. I'm also around on the usual places.
+        </p>
 
-      <div class="socials">
-        <a href="mailto:ayoubdabbabiofficial@gmail.com" class="social">
-          <span class="social-label">email</span>
-          <span class="social-handle">ayoubdabbabiofficial@gmail.com</span>
-        </a>
-        <a href="https://github.com/ayoubg1" target="_blank" rel="noopener" class="social">
-          <span class="social-label">github</span>
-          <span class="social-handle">@ayoubg1</span>
-        </a>
-        <a href="https://twitter.com/ayoub_gamer" target="_blank" rel="noopener" class="social">
-          <span class="social-label">x / twitter</span>
-          <span class="social-handle">@ayoub_gamer</span>
-        </a>
-        <a href="https://linkedin.com/in/ayoub-dabbabi-3846043a1" target="_blank" rel="noopener" class="social">
-          <span class="social-label">Linkedin</span>
-          <span class="social-handle">Ayoub Dabbabi</span>
-        </a>
+        <div class="socials reveal">
+          <a href="mailto:ayoubdabbabiofficial@gmail.com" class="social">
+            <span class="social-label">email</span>
+            <span class="social-handle">ayoubdabbabiofficial@gmail.com</span>
+          </a>
+          <a href="https://github.com/ayoubg1" target="_blank" rel="noopener" class="social">
+            <span class="social-label">github</span>
+            <span class="social-handle">@ayoubg1</span>
+          </a>
+          <a href="https://twitter.com/ayoub_gamer" target="_blank" rel="noopener" class="social">
+            <span class="social-label">x / twitter</span>
+            <span class="social-handle">@ayoub_gamer</span>
+          </a>
+          <a href="https://linkedin.com/in/ayoub-dabbabi-3846043a1" target="_blank" rel="noopener" class="social">
+            <span class="social-label">Linkedin</span>
+            <span class="social-handle">Ayoub Dabbabi</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-line"></div>
-    <div class="footer-row">
-      <span>© <span id="year"></span> Ayoub. Made with care.</span>
-      <a href="#top" class="back-top">Back to top ↑</a>
+    <div class="container">
+      <div class="footer-line"></div>
+      <div class="footer-row">
+        <span>© <span id="year"></span> Ayoub. Made with care.</span>
+        <a href="#top" class="back-top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
   <script>
+    // current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mark JS active so reveal animations only apply when JS can drive them
+    document.documentElement.classList.add('js');
+
+    // scroll-reveal
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealEls = document.querySelectorAll('.reveal');
+
+    if (prefersReduced || !('IntersectionObserver' in window)) {
+      revealEls.forEach(el => el.classList.add('is-visible'));
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      revealEls.forEach(el => io.observe(el));
+    }
   </script>
 </body>
 </html>
