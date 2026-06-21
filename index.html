@@ -23,6 +23,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ===== INTRO PRANK (delete this whole block to remove) ===== -->
+  <div id="intro-overlay">
+    <p id="intro-text"></p>
+  </div>
+  <!-- ===== END INTRO PRANK ===== -->
+
   <!-- grain & noise overlay -->
   <div class="grain" aria-hidden="true"></div>
 
@@ -299,5 +305,51 @@
       revealEls.forEach(el => io.observe(el));
     }
   </script>
+  <!-- ===== INTRO PRANK SCRIPT (delete this whole block to remove) ===== -->
+  <script>
+    (function () {
+      const overlay = document.getElementById('intro-overlay');
+      const el = document.getElementById('intro-text');
+      if (!overlay || !el) return;
+
+      // stop the page behind from scrolling while the intro plays
+      document.documentElement.style.overflow = 'hidden';
+
+      const FADE = 320; // ms, must match the CSS transition
+      const seq = [
+        { t: 'Hey',                    hold: 1900 },
+        { t: 'I just wanna tell you…', hold: 1900 },
+        { t: 'you are cooked',         hold: 2100 },
+        { t: 'He',                     hold: 500, laugh: true },
+        { t: 'HeHe',                   hold: 550, laugh: true },
+        { t: 'HeHeHe',                 hold: 850, laugh: true },
+      ];
+
+      const RICKROLL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+      let i = 0;
+
+      function next() {
+        if (i >= seq.length) {
+          window.location.href = RICKROLL;
+          return;
+        }
+        const step = seq[i++];
+        el.textContent = step.t;
+        el.classList.toggle('laugh', !!step.laugh);
+
+        // fade in
+        requestAnimationFrame(function () { el.style.opacity = '1'; });
+
+        // hold, then fade out, then show the next line
+        setTimeout(function () {
+          el.style.opacity = '0';
+          setTimeout(next, FADE);
+        }, step.hold + FADE);
+      }
+
+      next();
+    })();
+  </script>
+  <!-- ===== END INTRO PRANK SCRIPT ===== -->
 </body>
 </html>
