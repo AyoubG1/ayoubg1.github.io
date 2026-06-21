@@ -657,3 +657,37 @@ main { width: 100%; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
   * { transition-duration: 0.01ms !important; }
 }
+
+/* ===== INTRO PRANK overlay (delete this whole block to remove) ===== */
+#intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background: radial-gradient(circle at 50% 38%, #7b2cbf 0%, #4a1772 70%, #36105a 100%);
+  color: #ffffff;
+}
+#intro-text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 7vw, 4.5rem);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  opacity: 0;
+  transition: opacity 0.32s ease, transform 0.32s ease;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.35);
+}
+#intro-text.laugh {
+  font-style: italic;
+  transform: scale(1.06);
+}
+/* if the visitor prefers reduced motion, the fades still work but stay gentle */
+@media (prefers-reduced-motion: reduce) {
+  #intro-text { transition: opacity 0.2s ease; }
+  #intro-text.laugh { transform: none; }
+}
+/* ===== END INTRO PRANK overlay ===== */
