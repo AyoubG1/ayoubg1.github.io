@@ -3,353 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayoub — ayoubg1.dev</title>
-  <meta name="description" content="Personal site of Ayoub — projects, writing, and things I'm building." />
-  <meta name="theme-color" content="#190d0b" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Ayoub — ayoubg1.dev" />
-  <meta property="og:description" content="Personal site of Ayoub — projects, writing, and things I'm building." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ayoubg1.dev" />
+  <title>Hello world — ayoubg1.dev</title>
+  <meta name="description" content="Why I started this blog." />
+  <meta name="theme-color" content="#0f0e0c" />
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>★</text></svg>" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .post-page {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: clamp(3rem, 9vh, 6rem) var(--pad-x) 4rem;
+    }
+    .post-meta {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      color: var(--ink-dim);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .post-meta .meta-line {
+      display: inline-block; width: 2rem; height: 1px; background: var(--ink-dim);
+    }
+    .post-h1 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+    .post-body p {
+      color: var(--ink-soft);
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+    }
+    .post-body h2 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--ink);
+    }
+    .post-body a {
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      transition: border-color 0.2s ease;
+    }
+    .post-body a:hover { border-color: var(--accent); }
+    .post-body code {
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+      background: var(--bg-soft);
+      padding: 0.1em 0.4em;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      color: var(--ink);
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 3rem;
+      font-size: 13px;
+      color: var(--ink-soft);
+      transition: color 0.2s ease;
+    }
+    .back:hover { color: var(--accent); }
+  </style>
 </head>
 <body>
-  <!-- ===== INTRO PRANK (delete this whole block to remove) ===== -->
-  <div id="intro-overlay">
-    <p id="intro-text"></p>
-  </div>
-  <!-- ===== END INTRO PRANK ===== -->
-
-  <!-- grain & noise overlay -->
   <div class="grain" aria-hidden="true"></div>
 
   <header class="nav">
-    <div class="container nav-inner">
-      <a href="/" class="logo">
-        <span class="logo-mark">★</span>
-        <span class="logo-text">ayoubg1<span class="dot">.</span>dev</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#writing">writing</a>
-        <a href="#contact">contact</a>
-      </nav>
-    </div>
+    <a href="/" class="logo">
+      <span class="logo-mark">★</span>
+      <span class="logo-text">ayoubg1<span class="dot">.</span>dev</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/#about">about</a>
+      <a href="/#projects">projects</a>
+      <a href="/#writing">writing</a>
+      <a href="/#contact">contact</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- HERO (dark) -->
-    <section class="hero" id="top">
-      <div class="container hero-inner">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="hero-meta">
-          <span class="meta-line"></span>
-          <span class="meta-text">portfolio · 2026</span>
-        </div>
-        <h1 class="hero-title">
-          Hi, I'm <em>Ayoub</em>.<br />
-          I build things <br/>just cuz
-          I can.
-        </h1>
-        <p class="hero-sub">
-          Developer or just a Human being I guess based in Berlin, studying
-          Computer Engineering or Technische Informatik at TU Berlin.
-          I like a drink called Mio Mio and usually you will find me at the bib.
-          Heading toward <span class="hl">consumer hardware and embedded
-          systems</span>, building <span class="hl">web apps and 3D games</span>
-          along the way.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">See my work →</a>
-          <a href="mailto:hello@ayoubg1.dev" class="btn btn-ghost">Get in touch</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT (light panel) -->
-    <section class="section section-light" id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-num">01</span>
-          <h2 class="section-title">About</h2>
-        </div>
-        <div class="about-grid reveal">
-          <div class="about-text">
-            <p>
-              I'm a developer who enjoys turning ideas into real, usable products.
-              I don't care if the idea is crazy or not, as long as wir Spaß machen.
-            </p>
-            <p>
-              Right now I'm learning <span class="hl">mobile apps developement</span> and
-              building <span class="hl">apps that solves problems</span>. Outside of code I
-              enjoy Anime, Gaming, Basketball, and playing survival mode rl. 
-            </p>
-            <p>
-              If you're working on something interesting, I'd love to hear about it.
-            </p>
-          </div>
-          <aside class="about-side">
-            <div class="card">
-              <div class="card-label">stack</div>
-              <ul class="taglist">
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>PostgreSQL</li>
-                <li>Git</li>
-              </ul>
-            </div>
-            <div class="card">
-              <div class="card-label">currently</div>
-              <p class="card-text">Open to internships & freelance work.</p>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS (dark) -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-num">02</span>
-          <h2 class="section-title">Selected Projects</h2>
-        </div>
-
-        <div class="projects">
-          <article class="project reveal">
-            <div class="project-num">001</div>
-            <div class="project-main">
-              <h3 class="project-title">Community Reporting Platform</h3>
-              <p class="project-desc">
-                Community Reporting Platform is a civic mobile app concept that enables citizens to report local
-                infrastructure and environmental issues using photos and geolocation. The project aims to improve
-                community engagement by connecting residents, municipalities, and donors to accelerate problem resolution.
-              </p>
-              <div class="project-tags">
-                <span>React</span><span>TypeScript</span><span>Tailwind</span>
-              </div>
-            </div>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live ↗</a>
-              <a href="#" target="_blank" rel="noopener">Code ↗</a>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-num">002</div>
-            <div class="project-main">
-              <h3 class="project-title">Melody Dash</h3>
-              <p class="project-desc">
-                Melody Dash is a 3D rhythm-based mobile game built in Unity that combines
-                fast obstacle-avoidance gameplay with music synchronization mechanics. 
-                The project focuses on creating engaging level design, responsive player
-                controls, and scalable game systems including progression, inventory, and in-game rewards.
-              </p>
-              <div class="project-tags">
-                <span>Next.js</span><span>PostgreSQL</span><span>Prisma</span>
-              </div>
-            </div>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live ↗</a>
-              <a href="#" target="_blank" rel="noopener">Code ↗</a>
-            </div>
-          </article>
-
-          <article class="project project-featured reveal">
-            <div class="project-num">003</div>
-            <div class="project-main">
-              <h3 class="project-title">
-                Breath of the Damned — Global Game Jam
-                <span class="badge-play">▶ playable</span>
-              </h3>
-              <p class="project-desc">
-                A retro-inspired first-person shooter built in Unity during a 48-hour
-                game jam hosted at <a href="https://www.kolibrigames.com" target="_blank" rel="noopener" class="inline-link">Kolibri Games</a>.
-                I worked as gameplay programmer in a team of four — implementing core
-                gameplay systems, audio integration, and visual effects including fog
-                shaders and atmosphere work.
-              </p>
-              <div class="project-tags">
-                <span>Unity</span><span>C#</span><span>Shaders</span><span>Game Jam</span>
-              </div>
-            </div>
-            <div class="project-links project-links-featured">
-              <a href="https://shervin-shafizad.itch.io/breath-of-the-dammed" target="_blank" rel="noopener" class="btn-play">
-                <span class="btn-play-icon" aria-hidden="true">▶</span> Play it now
-              </a>
-              <a href="https://globalgamejam.org/games/2026/breath-damned-9" target="_blank" rel="noopener" class="link-secondary">Jam page ↗</a>
-            </div>
-          </article>
-        </div>
-
-        <p class="more-link reveal">
-          <a href="https://github.com/ayoubg1" target="_blank" rel="noopener">
-            More on GitHub →
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <!-- WRITING / BLOG (light panel) -->
-    <section class="section section-light" id="writing">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-num">03</span>
-          <h2 class="section-title">Writing</h2>
-        </div>
-
-        <ul class="posts">
-          <li class="post reveal">
-            <a href="posts/hello-world.html">
-              <time datetime="2026-01-15">Jan 15, 2026</time>
-              <span class="post-title">Hello world — why I started this blog</span>
-              <span class="post-arrow">→</span>
-            </a>
-          </li>
-          <li class="post reveal">
-            <a href="https://linkly.link/2iscm">
-              <time datetime="2026-02-10">Feb 10, 2026</time>
-              <span class="post-title">Click Here, u won't regret it</span>
-              <span class="post-arrow">→</span>
-            </a>
-          </li>
-          <li class="post reveal">
-            <a href="https://linkly.link/2iscm">
-              <time datetime="2026-03-04">Mar 04, 2026</time>
-              <span class="post-title">And another Click Here :) </span>
-              <span class="post-arrow">→</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT (dark) -->
-    <section class="section section-contact" id="contact">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-num">04</span>
-          <h2 class="section-title">Get in touch</h2>
-        </div>
-        <p class="contact-lead reveal">
-          The fastest way to reach me is email. I'm also around on the usual places.
-        </p>
-
-        <div class="socials reveal">
-          <a href="mailto:ayoubdabbabiofficial@gmail.com" class="social">
-            <span class="social-label">email</span>
-            <span class="social-handle">ayoubdabbabiofficial@gmail.com</span>
-          </a>
-          <a href="https://github.com/ayoubg1" target="_blank" rel="noopener" class="social">
-            <span class="social-label">github</span>
-            <span class="social-handle">@ayoubg1</span>
-          </a>
-          <a href="https://twitter.com/ayoub_gamer" target="_blank" rel="noopener" class="social">
-            <span class="social-label">x / twitter</span>
-            <span class="social-handle">@ayoub_gamer</span>
-          </a>
-          <a href="https://linkedin.com/in/ayoub-dabbabi-3846043a1" target="_blank" rel="noopener" class="social">
-            <span class="social-label">Linkedin</span>
-            <span class="social-handle">Ayoub Dabbabi</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-line"></div>
-      <div class="footer-row">
-        <span>© <span id="year"></span> Ayoub. Made with care.</span>
-        <a href="#top" class="back-top">Back to top ↑</a>
-      </div>
+  <article class="post-page">
+    <div class="post-meta">
+      <span class="meta-line"></span>
+      <time datetime="2026-01-15">January 15, 2026</time>
+      <span>· 2 min read</span>
     </div>
-  </footer>
 
-  <script>
-    // current year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <h1 class="post-h1">Hello world — why I started this blog.</h1>
 
-    // mark JS active so reveal animations only apply when JS can drive them
-    document.documentElement.classList.add('js');
+    <div class="post-body">
+      <p>
+        Welcome to my corner of the internet. I built this site to have one
+        place for the things I'm working on, the things I'm learning, and the
+        occasional thought I want to keep around longer than a tweet.
+      </p>
 
-    // scroll-reveal
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const revealEls = document.querySelectorAll('.reveal');
+      <h2>What you'll find here</h2>
+      <p>
+        Mostly short posts about projects, notes on what I'm reading, and
+        write-ups of things I figure out along the way. I'd rather post
+        something useful and short than wait for a perfect long-form essay
+        that never ships.
+      </p>
 
-    if (prefersReduced || !('IntersectionObserver' in window)) {
-      revealEls.forEach(el => el.classList.add('is-visible'));
-    } else {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-      revealEls.forEach(el => io.observe(el));
-    }
-  </script>
-  <!-- ===== INTRO PRANK SCRIPT (delete this whole block to remove) ===== -->
-  <script>
-    (function () {
-      const overlay = document.getElementById('intro-overlay');
-      const el = document.getElementById('intro-text');
-      if (!overlay || !el) return;
+      <h2>How it's built</h2>
+      <p>
+        This site is plain HTML and CSS — no framework, no build step. It's
+        hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+        with a custom domain. The whole source is open at
+        <a href="https://github.com/ayoubg1/ayoubg1.github.io" target="_blank" rel="noopener">github.com/ayoubg1</a>
+        if you want to poke around.
+      </p>
 
-      // stop the page behind from scrolling while the intro plays
-      document.documentElement.style.overflow = 'hidden';
+      <p>
+        Thanks for stopping by — more soon.
+      </p>
+    </div>
 
-      const FADE = 320; // ms, must match the CSS transition
-      const seq = [
-        { t: 'Hey',                    hold: 1900 },
-        { t: 'I just wanna tell you…', hold: 1900 },
-        { t: 'you are cooked',         hold: 2100 },
-        { t: 'He',                     hold: 500, laugh: true },
-        { t: 'HeHe',                   hold: 550, laugh: true },
-        { t: 'HeHeHe',                 hold: 850, laugh: true },
-      ];
-
-      const RICKROLL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-      let i = 0;
-
-      function next() {
-        if (i >= seq.length) {
-          window.location.href = RICKROLL;
-          return;
-        }
-        const step = seq[i++];
-        el.textContent = step.t;
-        el.classList.toggle('laugh', !!step.laugh);
-
-        // fade in
-        requestAnimationFrame(function () { el.style.opacity = '1'; });
-
-        // hold, then fade out, then show the next line
-        setTimeout(function () {
-          el.style.opacity = '0';
-          setTimeout(next, FADE);
-        }, step.hold + FADE);
-      }
-
-      next();
-    })();
-  </script>
-  <!-- ===== END INTRO PRANK SCRIPT ===== -->
+    <a href="/" class="back">← Back to home</a>
+  </article>
 </body>
 </html>
