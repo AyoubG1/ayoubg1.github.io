@@ -9,10 +9,18 @@ ayoubg1.dev/
 ├── index.html          ← main page (hero, about, projects, experience, writing, contact)
 ├── style.css           ← all styles
 ├── CNAME               ← tells GitHub Pages to serve at ayoubg1.dev
+├── fonts/
+│   ├── Monocraft-Regular.woff2   ← pixel font for logo, name and headings
+│   ├── Monocraft-Bold.woff2
+│   └── OFL.txt                   ← font license (SIL Open Font License, keep it)
 ├── posts/
 │   └── hello-world.html
 └── README.md
 ```
+
+The pixel font is [Monocraft](https://github.com/IdreesInc/Monocraft), an open-licensed font
+in the style of Minecraft's lettering. It's self-hosted in `fonts/`, so no external request.
+Use it anywhere with `font-family: var(--font-pixel);`.
 
 ## Editing content
 
